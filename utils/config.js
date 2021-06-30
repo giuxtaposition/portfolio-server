@@ -1,0 +1,17 @@
+require('dotenv').config()
+
+let PORT = process.env.PORT
+let MONGODB_URI = process.env.MONGODB_URI
+let JWT_SECRET = process.env.JWT_SECRET
+let NODEMAILER_SERVICE = process.env.NODEMAILER_SERVICE
+let NODEMAILER_USER = process.env.NODEMAILER_USER
+let NODEMAILER_PASSWORD = process.env.NODEMAILER_PASSWORD
+
+module.exports = {
+  MONGODB_URI,
+  PORT,
+  JWT_SECRET,
+  NODEMAILER_PASSWORD,
+  NODEMAILER_SERVICE,
+  NODEMAILER_USER,
+}
