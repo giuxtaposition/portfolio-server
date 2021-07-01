@@ -50,7 +50,7 @@ server.applyMiddleware({ app })
 
 app.use(cors())
 app.use(express.json())
-app.use('/api/contact', contactRouter)
+app.use('/contact', contactRouter)
 app.use('/images', express.static('images'))
 
 const httpServer = http.createServer(app)
