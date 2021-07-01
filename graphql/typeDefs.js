@@ -43,7 +43,6 @@ module.exports = gql`
       projectLink: String
       projectGithub: String
       category: [String]
-      id: ID!
       language: String
       framework: String
       library: String
