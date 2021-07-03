@@ -40,7 +40,7 @@ const server = new ApolloServer({
     }
 
     return {
-      currentUser,
+      currentUser: currentUser.length ? currentUser : undefined,
       url: req.protocol + '://' + req.get('host'),
     }
   },
